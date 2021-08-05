@@ -4,17 +4,18 @@ import galaxy from '../assets/galaxy.jpg';
 import falcon from '../assets/millenium-falcon.png';
 import lovebaby from '../assets/love-bb.jpg';
 
+import './Header.css';
 
 const Header = () => {
     return (
-        <div class='w-full  flex justify-center  '>
-            <div class=''>
-                <img class='h-72 w-full' src={lovebaby} alt='han and leia'/>
+        <div className='global-header'>
+            {/* <div className='love-baby'>
+                 <img className='love-baby-image' src={lovebaby} alt='han and leia'/>}
+            </div> */}
+            <div className='galaxy'>
+                <img className='' src={galaxy} alt='galaxy'/>
             </div>
-            <div class='w-full'>
-                <img class='h-72 w-full relative' src={galaxy} alt='galaxy'/>
-            </div>
-                <img class='self-end w-24 absolute' src={falcon} alt='millenium-falcon'/>
+                <img className='falcon' src={falcon} alt='millenium-falcon'/>
         </div>   
 
     )

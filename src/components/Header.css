@@ -1,0 +1,22 @@
+.global-header {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+}
+
+.love-baby {
+    width: 30%;
+}
+
+.love-baby-image {
+    height: 100%;
+}
+
+.galaxy {
+
+}
+
+.falcon {
+    width: 70px;
+    position: absolute;
+}
