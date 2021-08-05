@@ -1,9 +1,11 @@
 import { useState, useRef } from "react";
-import { Redirect } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import love from "../assets/stormtrooper-love.jpg";
 
 const Connexion = () => {
   // const [toHome, setToHome] = useState(false);
+  const history = useHistory();
+
   const [message, setMessage] = useState("");
   const [formdata, setformdata] = useState({
     email: "",
@@ -11,6 +13,9 @@ const Connexion = () => {
   });
   const { email, password } = formdata;
 
+  const navigateToHome = () => {
+    history.push("/Home");
+  };
   const pass = useRef();
   if (!localStorage.getItem("users")) {
     let users = [
@@ -41,7 +46,7 @@ const Connexion = () => {
     if (!search) {
       setMessage("user not found");
     } else {
-      return <Redirect to='/home' />;
+      return navigateToHome;
     }
 
     sessionStorage.setItem("email", email);
@@ -88,6 +93,7 @@ const Connexion = () => {
                 class='bg-purple	 text-lightgray px-4 py-2 rouded hover:bg-purple-dark	 mt-5'
                 type='submit'
                 name='submit'
+                onClick={navigateToHome}
               >
                 Join the force
               </button>
