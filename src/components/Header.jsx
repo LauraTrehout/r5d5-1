@@ -5,9 +5,9 @@ import galaxy from '../assets/galaxy.jpg';
 
 const Header = () => {
     return (
-        <div class='h-40 bg-red-800 flex justify-between'>
+        <div class='h-1/10 bg-darkside'>
             <div class=''>
-                <img class='' src=''/>
+                <img src={galaxy}/>
             </div>
             <div  class=''>
                 <img class='' src=''/>

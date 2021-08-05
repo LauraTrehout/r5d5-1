@@ -5,7 +5,7 @@ import Header from '../components/Header'
 
 const Home = () => {
   return (
-    <div class='max-h-full'>
+    <div class='h-max-screen'>
       <Header />
       <NavBar />
       <PickYourSide />
