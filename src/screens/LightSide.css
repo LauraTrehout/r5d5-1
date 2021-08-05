@@ -1,0 +1,30 @@
+.light-side-container {
+    background-color: #e7bb41;
+}
+
+.light-side-container h1 {
+    font-size: 25px;
+    color: #2a1d31;
+    text-align: center;
+    padding: 17px;
+}
+
+.light-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #e7bb41;
+    padding-top: 15px;
+}
+
+.green-light-saber {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.light-side-container p {
+    color: #2a1d31;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 17px;
+}

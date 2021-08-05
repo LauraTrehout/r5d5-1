@@ -2,7 +2,7 @@ import React from 'react';
 
 const Search = () => {
     return (
-        <div>
+        <div class="w-10 h-10 bg-gray-100">
 
         </div>
 
