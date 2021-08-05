@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import DarkSide from "./screens/DarkSide";
 import LightSide from "./screens/LightSide";
 import Home from "./screens/Home";
@@ -15,36 +15,36 @@ import Connexion from "./components/Connexion";
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Switch>
-      <Route exact path='/'>
-        <WelcomePage />
-      </Route>
-      <Route path='/home'>
-        <Home />
-      </Route>
-      <Route path='/darkside'>
-        <DarkSide />
-      </Route>
-      <Route path='/lightside'>
-        <LightSide />
-      </Route>
-      <Route path='/profile/:id'>
-        <CardProfileDetails />
-      </Route>
-      <Route path='/MyProfile'>
-        <MyProfile />
-      </Route>
-      <Route path='/WallOfShame'>
-        <WallOfShame />
-      </Route>
-      <Route path='/Search'>
-        <Search />
-      </Route>
-      <Route path='/Connexion'>
-        <Connexion />
-      </Route>
-    </Switch>
+        <Route exact path='/'>
+          <WelcomePage />
+        </Route>
+        <Route path='/home'>
+          <Home />
+        </Route>
+        <Route path='/darkside'>
+          <DarkSide />
+        </Route>
+        <Route path='/lightside'>
+          <LightSide />
+        </Route>
+        <Route path='/profile/:id'>
+          <CardProfileDetails />
+        </Route>
+        <Route path='/MyProfile'>
+          <MyProfile />
+        </Route>
+        <Route path='/WallOfShame'>
+          <WallOfShame />
+        </Route>
+        <Route path='/Search'>
+          <Search />
+        </Route>
+        <Route path='/Connexion'>
+          <Connexion />
+        </Route>
+      </Switch>
     </div>
   );
 }
