@@ -1,0 +1,52 @@
+.details-profile {
+    width: 100%;
+    height: 100vh;
+    background-color: #2a1d31;
+    display: flex;
+    align-items: center;
+}
+
+.details-image {
+    width: 30%;
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.d-image {
+    width: 100%;
+}
+
+.details-character {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+   flex-direction: column;
+    align-items: start;
+    width: 50%;
+    height: 100vh;
+}
+
+.semple {
+    display: flex;
+    margin: 50px;
+}
+
+.details-character-1 {
+    color: white;
+    padding: 40px;
+    border-left: solid #e7bb41 10px;
+}
+
+.details-character-2 {
+    color: white;
+    padding: 40px;  
+    border-left: solid #e7bb41 10px;
+}
+
+.details-yellowbox {
+    background-color: #e7bb41;
+    width: 90%;
+    height: 50%;
+    padding: 80px;
+}

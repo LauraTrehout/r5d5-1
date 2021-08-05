@@ -1,12 +1,69 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
+import { useParams } from 'react-router';
+
+import axios from 'axios';
+
+import Header from '../components/Header';
+import NavBar from '../components/NavBar';
+
+import './CardProfileDetails.css'
 
 const CardProfileDetails = () => {
-    return (
-        <div>
 
-        </div>
+    const [details, setdetails] = useState([]);
+    const {id} = useParams();
+
+    useEffect(() => {
+            const LoveDetail = () => {
+            axios
+                .get(`https://miadil.github.io/starwars-api/api/id/${id}.json`)
+                .then ((result) => setdetails(result.data)
+        );
+    }
+    
+    LoveDetail();
+}, []);
+    return (
+        <>
+            <Header />
+            <NavBar />
+            <div className='details-profile'>
+                <div  className='details-image'>
+                    <img className ='d-image' src={details.image} alt={details.name} />
+                </div>
+                <div className='details-character'>
+                    <div className='semple'>
+                        <div className='details-character-1'>
+                            <p>eye color : {details.eyeColor}</p>
+                            <p>age : {details.born}</p>
+                            <p>height : {details.height}</p>
+                        </div>
+                        <div className='details-character-2'>
+                            <p>homeworld : {details.homeworld}</p>
+                            <p>gender : {details.gender}</p>
+                            <p>species : {details.species}</p>
+                        </div>
+                    </div>
+                    <div className='details-yellowbox'>
+                    <h4>{details.name}</h4>
+                        <br/>
+                    <p>{details.masters}</p>
+                        <br/>
+                    <p>{details.apprentices}</p>
+                        <br/>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti autem, alias
+                         quo possimus numquam quis, aspernatur quia, unde reprehenderit dignissimos quisquam. 
+                         At molestias voluptatum accusamus voluptates aliquid consequuntur expedita eligendi.
+                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti autem, alias
+                         quo possimus numquam quis, aspernatur quia, unde reprehenderit dignissimos quisquam.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </>
 
     )
-}
+};
 
 export default CardProfileDetails;
