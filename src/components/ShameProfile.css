@@ -1,14 +1,23 @@
 .shame-profile {
-    width: 320px;
-    height: 500px;
+    width: 420px;
+    height: 600px;
+    margin-bottom: 80px;
     padding: 20px;
-    padding-bottom: 85px;
+    position: relative;
+}
+
+.wanted {
+    height:570px;
+    box-shadow: 2px 2px 40px red;
 }
 
 .shame-profile-img {
-    width: 100%;
-    height: 100%;
-    box-shadow: 2px 2px 40px red;
+    z-index: 20;
+    width: 65%;
+    height: 65%;
+    position: absolute;
+    top:25%;
+    left:18%;
 }
 
 .shame-profile h3 {
