@@ -14,7 +14,8 @@ import "tailwindcss/tailwind.css";
 
 function App() {
   return (
-    <Switch>
+    <div className="App">
+      <Switch>
       <Route exact path='/'>
         <WelcomePage />
       </Route>
@@ -40,6 +41,7 @@ function App() {
         <Search />
       </Route>
     </Switch>
+    </div>
   );
 }
 
