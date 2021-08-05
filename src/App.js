@@ -1,16 +1,17 @@
 import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
-import DarkSide from './screens/DarkSide';
-import LightSide from './screens/LightSide';
-import Home from './screens/Home';
-import WelcomePage from './screens/WelcomePage';
-import CardProfileDetails from './screens/CardProfileDetails';
-import MyProfile from './screens/MyProfile';
-import WallOfShame from './screens/WallOfShame';
+import DarkSide from "./screens/DarkSide";
+import LightSide from "./screens/LightSide";
+import Home from "./screens/Home";
+import WelcomePage from "./screens/WelcomePage";
+import CardProfileDetails from "./screens/CardProfileDetails";
+import MyProfile from "./screens/MyProfile";
+import WallOfShame from "./screens/WallOfShame";
 import Search from "./screens/Search";
 
-import './App.css';
+import "./App.css";
 import "tailwindcss/tailwind.css";
+import Connexion from "./components/Connexion";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
         <Home />
       </Route>
       <Route path='/darkside'>
-        <DarkSide/>
+        <DarkSide />
       </Route>
       <Route path='/lightside'>
         <LightSide />
@@ -39,6 +40,9 @@ function App() {
       </Route>
       <Route path='/Search'>
         <Search />
+      </Route>
+      <Route path='/Connexion'>
+        <Connexion />
       </Route>
     </Switch>
     </div>
