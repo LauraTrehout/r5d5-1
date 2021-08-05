@@ -15,13 +15,11 @@ module.exports = {
         DEFAULT: "#2a1d31",
         dark: "#009eeb",
       },
-<<<<<<< HEAD
       pinka: {
         light: '#EACBF9',
         DEFAULT: '#DAA2F4',
         dark: '#8415B7',
       },
-=======
       greypurple: {
         light: "#393E41",
         DEFAULT: "#393e41",
@@ -37,7 +35,6 @@ module.exports = {
       //   DEFAULT: '#91709b',
       //   dark: '#684E70',
       // },
->>>>>>> a7ae6bdfebc5e1af89edf0a92136419ee30c0428
     },
 
     extend: {
