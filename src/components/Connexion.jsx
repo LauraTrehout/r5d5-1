@@ -54,15 +54,15 @@ const Connexion = () => {
   };
 
   return (
-    <div class='bg-gray-100 flex content-center justify-center h-full items-center'>
-      <div class='bg-white shadow-lg max-w-lg'>
+    <div class='flex content-center justify-center h-full items-center'>
+      <div class='bg-graypurple  shadow-lg max-w-lg'>
         <img class='w-full h-45 object-cover' src={love} alt='love connexion' />
-        <div class='p-4'>
+        <div class='p-4 '>
           <form onSubmit={submit}>
-            <h1 class='text-2xl font-bold text-graypurple mb-2 mt-2 text-center'>
+            <h1 class='text-3xl font-bold text-lightgray mb-2 mt-2 text-center'>
               Connexion
             </h1>
-            <label class='text-darkside block mb-2 mt-5'>Email:</label>
+            <label class='text-lightgray block mb-2 mt-5'>Email:</label>
             <input
               class='border border-gray shadow-inner py-2 px-3 text-gray-700 w-full focus:shadow-lg'
               type='email'
@@ -72,7 +72,7 @@ const Connexion = () => {
               onChange={change}
             ></input>
 
-            <label class='text-darkside block mb-2 mt-5'>Password:</label>
+            <label class='text-lightgray block mb-2 mt-5'>Password:</label>
             <div>
               <input
                 class='border border-gray shadow-inner py-2 px-3 text-gray-700 w-full focus:shadow-lg'
@@ -85,12 +85,12 @@ const Connexion = () => {
               ></input>
             </div>
             <div>
-              <label class='text-error block mb-2 mt-5'>{message}</label>
+              <label class='text-error block mt-5'>{message}</label>
             </div>
 
             <div>
               <button
-                class='bg-purple	 text-lightgray px-4 py-2 rouded hover:bg-purple-dark	 mt-5'
+                class='bg-purple	 text-lightgray px-4 py-2 rouded hover:bg-purple-dark	 mt-5 mb-5'
                 type='submit'
                 name='submit'
               >
