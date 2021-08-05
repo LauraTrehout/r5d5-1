@@ -53,6 +53,21 @@ module.exports = {
     },
 
     extend: {
+      animation: {
+        "color-change": "color-change-x2 2.5s linear infinite alternate both",
+        scale: "scale 5s linear infinite",
+      },
+      keyframes: {
+        "color-change-x2": {
+          "0%": { color: "#EACBF9" },
+          "100%": { color: "#8415B7" },
+        },
+        scale: {
+          0: { transform: "scale(0.75)" },
+          "50%": { transform: "scale(1.25)" },
+          100: { transform: "scale(0.75)" },
+        },
+      },
       backgroundImage: (theme) => ({
         "hello-there": "url('/src/assets/hello-there.png')",
         accueil: "url('/src/assets/accueil.png')",
