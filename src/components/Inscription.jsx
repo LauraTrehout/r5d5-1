@@ -2,10 +2,9 @@ import { useState, useRef } from "react";
 import { useHistory } from "react-router-dom";
 import love from "../assets/stormtrooper-love.jpg";
 
-const Connexion = () => {
-  // const [toHome, setToHome] = useState(false);
-  const history = useHistory();
+const Inscription = () => {
 
+  const history = useHistory();
   const [message, setMessage] = useState("");
   const [formdata, setformdata] = useState({
     email: "",
@@ -16,41 +15,25 @@ const Connexion = () => {
   const navigateToHome = () => {
     history.push("/Home");
   };
-  const pass = useRef();
-  if (!localStorage.getItem("users")) {
-    let users = [
-      {
-        email: "leia@force.com",
-        password: "light",
-      },
-      {
-        email: "luke@force.com",
-        password: "dark",
-      },
-    ];
 
-    localStorage.setItem("users", JSON.stringify(users));
-  }
+  const pass = useRef();
 
   const change = (e) => {
     setformdata({ ...formdata, [e.target.name]: e.target.value });
   };
   const submit = (e) => {
-    setMessage("");
     e.preventDefault();
-    let users = JSON.parse(localStorage.getItem("users") || "[]");
-    let search = users.find(
-      (user) => user.email === email && user.password === password
-    );
-
-    if (!search) {
-      setMessage("user not found");
-    } else {
-      return navigateToHome;
-    }
 
     sessionStorage.setItem("email", email);
     sessionStorage.setItem("password", password);
+
+    setformdata({
+      name: "",
+      email: "",
+      password: "",
+    });
+
+    navigateToHome();
   };
 
   return (
@@ -60,7 +43,7 @@ const Connexion = () => {
         <div class='p-4'>
           <form onSubmit={submit}>
             <h1 class='text-2xl font-bold text-graypurple mb-2 mt-2 text-center'>
-              Connexion
+              Inscription
             </h1>
             <label class='text-darkside block mb-2 mt-5'>Email:</label>
             <input
@@ -85,15 +68,10 @@ const Connexion = () => {
               ></input>
             </div>
             <div>
-              <label class='text-error block mb-2 mt-5'>{message}</label>
-            </div>
-
-            <div>
               <button
                 class='bg-purple	 text-lightgray px-4 py-2 rouded hover:bg-purple-dark	 mt-5'
                 type='submit'
                 name='submit'
-                onClick={navigateToHome}
               >
                 Join the force
               </button>
@@ -104,5 +82,4 @@ const Connexion = () => {
     </div>
   );
 };
-
-export default Connexion;
+export default Inscription;
