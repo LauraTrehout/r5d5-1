@@ -1,4 +1,12 @@
-.welcomePage {
-  background: center / contain no-repeat;
-  background-color: aqua;
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.btnClose {
+  padding: 10px 15px;
+  background-color: rgb(218, 162, 244);
+  border-radius: 5px;
 }

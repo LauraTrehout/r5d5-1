@@ -1,18 +1,44 @@
 import React from 'react';
-import CardListProfile from "../components/CardListProfile";
+import axios from 'axios';
+import { useState, useEffect } from 'react';
+
+import Header from '../components/Header';
+import CardProfile from './../components/CardProfile';
+import NavBar from './../components/NavBar';
+import RedLightSaber from '../assets/red-saber.png'
+
+import './DarkSide.css';
 
 const DarkSide = () => {
+    const [users, setUsers] = useState([]);
+    useEffect(() => {
+        const getUsers = () => {
+            axios
+                .get('https://miadil.github.io/starwars-api/api/all.json')
+                .then(res => setUsers(res.data)
+                );
+        }
+        getUsers();
+    }, []);
+
     return (
-        <div>
-            <div>
-                <h2>DARK SIDE</h2>
-                <img src=""/>
+        <>
+            <Header />
+            <NavBar />
+            <div className="dark-side-container">
+                <h1>DARK SIDE</h1>
                 <p>If you want to go deep into Uranus</p>
+                <img src={RedLightSaber} alt='red light saber' className='red-light-saber' />
+                
+                <div className='dark-cards'>
+                {users
+                .filter(user => user.affiliations.includes('Sith') && user.name!='Mon Mothma' || user.affiliations.includes('Galactic Empire') && user.name!='Mon Mothma')
+                .map(user => (
+                    <CardProfile key={user.id} {...user} />
+                ))}
+                </div>
             </div>
-            <CardListProfile />
-
-        </div>
-
+        </>
     )
 }
 
