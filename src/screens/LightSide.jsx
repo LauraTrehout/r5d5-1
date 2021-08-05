@@ -5,6 +5,9 @@ import { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import CardProfile from './../components/CardProfile';
 import NavBar from './../components/NavBar';
+import GreenLightSaber from '../assets/green-lightsaber.png'
+
+import './LightSide.css';
 
 const LightSide = () => {
     const [users, setUsers] = useState([]);
@@ -22,18 +25,20 @@ const LightSide = () => {
         <>
             <Header />
             <NavBar />
-            <div>
+            <div className="light-side-container">
                 <h1>LIGHT SIDE</h1>
-                <div class='flex-row flex-wrap m-auto'>
-                {users
-                .filter(user => user.affiliations.includes('New Republic') || user.affiliations.includes('Resistance'))
-                .map(user => (
-                    <CardProfile key={user.id} {...user} />
-                ))}
+                <p>If you want to go deep into a relationship</p>
+                <img src={GreenLightSaber} alt='green light saber' className='green-light-saber' />
+                <div className='light-cards'>
+                    {users
+                        .filter(user => user.affiliations.includes('New Republic') && user.name!='Mon Mothma' || user.affiliations.includes('Resistance') && user.name!='Mon Mothma')
+                        .map(user => (
+                            <CardProfile key={user.id} {...user} />
+                        ))}
                 </div>
             </div>
         </>
-    )
+    ) 
 }
 
 export default LightSide;

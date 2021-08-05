@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import CardProfile from './../components/CardProfile';
 import NavBar from './../components/NavBar';
-import RedLightSaber from '../assets/red-lightsaber.png'
+import RedLightSaber from '../assets/red-saber.png'
 
 import './DarkSide.css';
 
@@ -32,7 +32,7 @@ const DarkSide = () => {
                 
                 <div className='dark-cards'>
                 {users
-                .filter(user => user.affiliations.includes('Sith') || user.affiliations.includes('Galactic Empire'))
+                .filter(user => user.affiliations.includes('Sith') && user.name!='Mon Mothma' || user.affiliations.includes('Galactic Empire') && user.name!='Mon Mothma')
                 .map(user => (
                     <CardProfile key={user.id} {...user} />
                 ))}

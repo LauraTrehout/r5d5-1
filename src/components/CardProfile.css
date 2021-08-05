@@ -7,7 +7,7 @@
 .card-img-dark {
     height: 100%;
     width: 100%;
-    box-shadow: 3px 3px 20px darkred;
+    box-shadow: 3px 3px 20px #e7bb41;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -19,6 +19,6 @@
 .card-profile h3 {
     color: #e7e5df;
     text-align: center;
-    padding: 7px;
+    padding: 15px;
     font-size: 20px;
 }
