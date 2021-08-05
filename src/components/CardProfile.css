@@ -1,0 +1,24 @@
+.card-profile {
+    width: 320px;
+    height: 500px;
+    padding-bottom: 85px;
+}
+
+.card-img-dark {
+    height: 100%;
+    width: 100%;
+    box-shadow: 3px 3px 20px darkred;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card-img-dark:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.card-profile h3 {
+    color: #e7e5df;
+    text-align: center;
+    padding: 7px;
+    font-size: 20px;
+}

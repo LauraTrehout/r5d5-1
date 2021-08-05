@@ -1,5 +1,29 @@
-.global-card {
+.dark-side-container {
+    background-color: #2a1d31;
+}
+
+.dark-side-container h1 {
+    font-size: 25px;
+    color: #e7e5df;
+    text-align: center;
+    padding: 17px;
+}
+
+.dark-cards {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     background-color: #2a1d31;
+    padding-top: 15px;
+}
+
+.red-light-saber {
+    background-color: transparent;
+    width: 500px;
+}
+
+.dark-side-container p {
+    color: #e7e5df;
+    text-align: center;
+    padding-bottom: 5px;
 }
