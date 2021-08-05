@@ -5,11 +5,10 @@ import Header from '../components/Header'
 
 const Home = () => {
   return (
-    <div>
-  <Header />
-  <NavBar />
-  <PickYourSide />
-
+    <div class='max-h-full'>
+      <Header />
+      <NavBar />
+      <PickYourSide />
     </div>
   );
 }
