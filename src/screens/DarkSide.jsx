@@ -9,7 +9,7 @@ const DarkSide = () => {
                 <img src=""/>
                 <p>If you want to go deep into Uranus</p>
             </div>
-            <CardsListProfile />
+            <CardListProfile />
 
         </div>
 
