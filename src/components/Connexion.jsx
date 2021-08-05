@@ -46,7 +46,7 @@ const Connexion = () => {
     if (!search) {
       setMessage("user not found");
     } else {
-      return navigateToHome;
+      return navigateToHome();
     }
 
     sessionStorage.setItem("email", email);
@@ -93,7 +93,6 @@ const Connexion = () => {
                 class='bg-purple	 text-lightgray px-4 py-2 rouded hover:bg-purple-dark	 mt-5'
                 type='submit'
                 name='submit'
-                onClick={navigateToHome}
               >
                 Join the force
               </button>
