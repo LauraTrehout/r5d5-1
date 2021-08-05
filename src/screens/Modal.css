@@ -25,19 +25,14 @@
   border-radius: 5px;
 }
 
-/* @keyframes PopUp {
+@keyframes PopUp {
   0% {
-    transform: translate(0px, 0px);
+    transform: translate(150%);
     animation-timing-function:ease-in-out
-}
+  }
 
-50% {
-    transform: translate(0px, 12px);
+  100% {
+    transform: translate(0);
     animation-timing-function:ease-in-out
+  }
 }
-
-100% {
-    transform: translate(0px, 0px);
-    animation-timing-function:ease-in-out
-}
-} */
