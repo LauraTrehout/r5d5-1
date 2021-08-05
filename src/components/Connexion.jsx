@@ -2,7 +2,6 @@ import { useState, useRef } from "react";
 import love from "../assets/stormtrooper-love.jpg";
 
 const Connexion = () => {
-  const []
   const [formdata, setformdata] = useState({
     email: "",
     password: "",
