@@ -1,10 +1,10 @@
 .light-side-container {
-    background-color: #2a1d31;
+    background-color: #e7bb41;
 }
 
 .light-side-container h1 {
     font-size: 25px;
-    color: #e7e5df;
+    color: #2a1d31;
     text-align: center;
     padding: 17px;
 }
@@ -13,7 +13,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: #2a1d31;
+    background-color: #e7bb41;
     padding-top: 15px;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .light-side-container p {
-    color: #e7e5df;
+    color: #2a1d31;
     text-align: center;
     padding-bottom: 5px;
     font-size: 17px;
