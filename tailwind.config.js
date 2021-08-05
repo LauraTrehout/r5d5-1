@@ -46,10 +46,11 @@ module.exports = {
         accueil: "url('/src/assets/accueil.png')",
       }),
     },
-  },
-
+    
   variants: {
     extend: {},
   },
   plugins: [],
-};
+}
+}
+
