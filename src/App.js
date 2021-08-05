@@ -17,7 +17,8 @@ import Connexion from "./components/Connexion";
 
 function App() {
   return (
-    <Switch>
+    <div className="App">
+      <Switch>
       <Route exact path='/'>
         <WelcomePage />
       </Route>
@@ -46,6 +47,7 @@ function App() {
         <Connexion />
       </Route>
     </Switch>
+    </div>
   );
 }
 
