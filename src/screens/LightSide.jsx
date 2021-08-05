@@ -1,16 +1,38 @@
 import React from 'react';
-import CardListProfile from '../components/CardListProfile';
+import axios from 'axios';
+import { useState, useEffect } from 'react';
+
+import Header from '../components/Header';
+import CardProfile from './../components/CardProfile';
+import NavBar from './../components/NavBar';
 
 const LightSide = () => {
+    const [users, setUsers] = useState([]);
+    useEffect(() => {
+        const getUsers = () => {
+            axios
+                .get('https://miadil.github.io/starwars-api/api/all.json')
+                .then(res => setUsers(res.data)
+                );
+        }
+        getUsers();
+    }, []);
+
     return (
-        <div class='bg-yellow-400'>
+        <>
+            <Header />
+            <NavBar />
             <div>
-                <h2>LIGHT SIDE</h2>
-                <img src="" alt=""/>
-                <p>If you want to go deep into a relationship</p>
+                <h1>LIGHT SIDE</h1>
+                <div class='flex-row flex-wrap m-auto'>
+                {users
+                .filter(user => user.affiliations.includes('New Republic') || user.affiliations.includes('Resistance'))
+                .map(user => (
+                    <CardProfile key={user.id} {...user} />
+                ))}
+                </div>
             </div>
-            <CardListProfile />
-        </div>
+        </>
     )
 }
 

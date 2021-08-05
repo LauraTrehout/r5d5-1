@@ -1,0 +1,5 @@
+.global-card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #2a1d31;
+}
