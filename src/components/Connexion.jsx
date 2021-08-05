@@ -54,7 +54,7 @@ const Connexion = () => {
   };
 
   return (
-    <div class='bg-gray-100 flex content-center justify-center h-full items-center'>
+    <div class='bg-gray flex content-center justify-center h-full items-center'>
       <div class='bg-white shadow-lg max-w-lg'>
         <img class='w-full h-45 object-cover' src={love} alt='love connexion' />
         <div class='p-4'>
