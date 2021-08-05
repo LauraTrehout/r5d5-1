@@ -5,13 +5,12 @@ import missa from '../assets/missa-middle-finger.png';
 
 const Side = () => {
     return (
-        <div>
-          <h1>Pick your side</h1>
-          <div class=''>
-            <img src={chewbacca} alt='the light side' />
+        <div class='flex'>
+          <div class='bg-lightside w-1/2 flex justify-center items-center'>
+            <img class='h-1/4' src={chewbacca} alt='the light side' />
           </div>
-          <div class=''>
-            <img src={missa} alt='the dark side' />
+          <div class='bg-darkside w-1/2'>
+            <img class='h-1/4' src={missa} alt='the dark side' />
           </div>
         </div>
     )
