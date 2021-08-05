@@ -2,8 +2,6 @@ import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
 import DarkSide from "./screens/DarkSide";
 import LightSide from "./screens/LightSide";
-import Header from "./components/Header";
-import NavBar from "./components/NavBar";
 import Home from "./screens/Home";
 import WelcomePage from "./screens/WelcomePage";
 import CardProfileDetails from "./screens/CardProfileDetails";
