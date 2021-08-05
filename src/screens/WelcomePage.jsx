@@ -26,8 +26,8 @@ const WelcomePage = () => {
         </button>
       )}
       // Optional fields and their default values
-      offsetX={0}
-      offsetY={0}
+      offsetX={100}
+      offsetY={100}
     >
       {(onClick) => (
         <div className="modal" style={{ padding: '1em' }}>
