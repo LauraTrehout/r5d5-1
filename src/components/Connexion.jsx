@@ -1,13 +1,21 @@
 import { useState, useRef } from "react";
+import { useHistory } from "react-router-dom";
 import love from "../assets/stormtrooper-love.jpg";
 
 const Connexion = () => {
+  // const [toHome, setToHome] = useState(false);
+  const history = useHistory();
+
+  const [message, setMessage] = useState("");
   const [formdata, setformdata] = useState({
     email: "",
     password: "",
   });
   const { email, password } = formdata;
 
+  const navigateToHome = () => {
+    history.push("/Home");
+  };
   const pass = useRef();
   if (!localStorage.getItem("users")) {
     let users = [
@@ -28,6 +36,7 @@ const Connexion = () => {
     setformdata({ ...formdata, [e.target.name]: e.target.value });
   };
   const submit = (e) => {
+    setMessage("");
     e.preventDefault();
     let users = JSON.parse(localStorage.getItem("users") || "[]");
     let search = users.find(
@@ -35,18 +44,13 @@ const Connexion = () => {
     );
 
     if (!search) {
-      console.log("user not found");
-      return;
+      setMessage("user not found");
+    } else {
+      return navigateToHome;
     }
 
     sessionStorage.setItem("email", email);
     sessionStorage.setItem("password", password);
-
-    setformdata({
-      name: "",
-      email: "",
-      password: "",
-    });
   };
 
   return (
@@ -55,12 +59,12 @@ const Connexion = () => {
         <img class='w-full h-45 object-cover' src={love} alt='love connexion' />
         <div class='p-4'>
           <form onSubmit={submit}>
-            <h1 class='text-2xl font-bold text-gray-800 mb-2 mt-2 text-center'>
+            <h1 class='text-2xl font-bold text-graypurple mb-2 mt-2 text-center'>
               Connexion
             </h1>
-            <label class='text-gray-800 block mb-2 mt-5'>Email:</label>
+            <label class='text-darkside block mb-2 mt-5'>Email:</label>
             <input
-              class='border border-gray-300 shadow-inner py-2 px-3 text-gray-700 w-full focus:shadow-lg'
+              class='border border-gray shadow-inner py-2 px-3 text-gray-700 w-full focus:shadow-lg'
               type='email'
               value={email}
               placeholder='Enter Email'
@@ -68,10 +72,10 @@ const Connexion = () => {
               onChange={change}
             ></input>
 
-            <label class='text-gray-800 block mb-2 mt-5'>Password:</label>
+            <label class='text-darkside block mb-2 mt-5'>Password:</label>
             <div>
               <input
-                class='border border-gray-300 shadow-inner py-2 px-3 text-gray-700 w-full focus:shadow-lg'
+                class='border border-gray shadow-inner py-2 px-3 text-gray-700 w-full focus:shadow-lg'
                 ref={pass}
                 type='password'
                 placeholder='Enter Password'
@@ -81,10 +85,15 @@ const Connexion = () => {
               ></input>
             </div>
             <div>
+              <label class='text-error block mb-2 mt-5'>{message}</label>
+            </div>
+
+            <div>
               <button
-                class='bg-indigo-700	 text-white px-4 py-2 rouded hover:bg-indigo-900	 mt-5'
+                class='bg-purple	 text-lightgray px-4 py-2 rouded hover:bg-purple-dark	 mt-5'
                 type='submit'
                 name='submit'
+                onClick={navigateToHome}
               >
                 Join the force
               </button>
