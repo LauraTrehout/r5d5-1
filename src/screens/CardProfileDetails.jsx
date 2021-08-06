@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 
 import axios from 'axios';
 
@@ -12,25 +13,28 @@ import './CardProfileDetails.css'
 const CardProfileDetails = () => {
 
     const [details, setdetails] = useState([]);
-    const {id} = useParams();
+    const { id } = useParams();
 
     useEffect(() => {
-            const LoveDetail = () => {
+        const LoveDetail = () => {
             axios
                 .get(`https://miadil.github.io/starwars-api/api/id/${id}.json`)
-                .then ((result) => setdetails(result.data)
-        );
-    }
-    
-    LoveDetail();
-}, []);
+                .then((result) => setdetails(result.data)
+                );
+        }
+
+        LoveDetail();
+    }, []);
     return (
         <>
             <Header />
             <NavBar />
+            <Link to='/WallOfShame'>
+            <button className='wookie-btn'>#BalanceTonWookie</button>
+            </Link>
             <div className='details-profile'>
-                <div  className='details-image'>
-                    <img className ='d-image' src={details.image} alt={details.name} />
+                <div className='details-image'>
+                    <img className='d-image' src={details.image} alt={details.name} />
                 </div>
                 <div className='details-character'>
                     <div className='semple'>
@@ -46,6 +50,7 @@ const CardProfileDetails = () => {
                         </div>
                     </div>
                     <div className='details-yellowbox'>
+
                         <div className='details-yellowbox-inside'>
                             <h4>{details.name}</h4>
                                 <br/>
@@ -57,8 +62,7 @@ const CardProfileDetails = () => {
                          quo possimus numquam quis, aspernatur quia, unde reprehenderit dignissimos quisquam. 
                          At molestias voluptatum accusamus voluptates aliquid consequuntur expedita eligendi.
                         </p>
-                        </div>
-                    </div>                    
+                        </div>              
                 </div>
             </div>
         </>
