@@ -6,6 +6,15 @@
     align-items: center;
 }
 
+h4 {
+    font-weight:700;
+    color: #2a1d31;
+}
+
+.details-yellowbox p{
+    color: #2a1d31;
+}
+
 .details-image {
     width: 30%;
     margin: 5%;
@@ -15,16 +24,16 @@
 
 .d-image {
     width: 100%;
+    
 }
 
 .details-character {
-    font-size: 25px;
     display: flex;
     justify-content: center;
-   flex-direction: column;
+    flex-direction: column;
     align-items: start;
+    font-size: 20px;
     width: 50%;
-    height: 100vh;
 }
 
 .semple {
@@ -38,15 +47,17 @@
     border-left: solid #e7bb41 10px;
 }
 
-.details-character-2 {
-    color: white;
-    padding: 40px;  
-    border-left: solid #e7bb41 10px;
-}
-
 .details-yellowbox {
     background-color: #e7bb41;
     width: 90%;
     height: 50%;
-    padding: 80px;
+    padding: 40px;
+    min-width: 500px;
+    margin-bottom: 30px;
 }
+
+.details-yellowbox-inside {
+    font-size: 20px;
+    width: 80%;
+}
+
