@@ -59,10 +59,11 @@ const CardProfileDetails = () => {
                         <p>Apprentices : {details.apprentices}</p>
                             <br/>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti autem, alias
-                         quo possimus numquam quis, aspernatur quia, unde reprehenderit dignissimos quisquam. 
+                         quo possimus numquam quis, aspernatur quia, unde reprehenderit dignissimos quisquam.
                          At molestias voluptatum accusamus voluptates aliquid consequuntur expedita eligendi.
                         </p>
-                        </div>              
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
