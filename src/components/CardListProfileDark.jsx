@@ -1,13 +1,9 @@
-import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
-import axios from 'axios';
-
 import CardProfile from './CardProfile';
 import FavouriteButton from './FavouriteButton';
 
 import '../screens/DarkSide.css';
 
-const CardListProfile = ({ users, handleFavouriteClick, favouriteUsers }) => {
+const CardListProfileDark = ({ users, handleFavouriteClick, favouriteUsers }) => {
 
     return (
         <div className='dark-cards'>
@@ -26,4 +22,4 @@ const CardListProfile = ({ users, handleFavouriteClick, favouriteUsers }) => {
     )
 }
 
-export default CardListProfile;
+export default CardListProfileDark;

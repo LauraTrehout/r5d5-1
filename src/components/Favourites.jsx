@@ -1,7 +1,7 @@
+import { useState, useEffect } from 'react';
+
 import Header from './Header';
 import NavBar from './NavBar';
-import CardListProfile from './CardListProfile';
-import { useState, useEffect } from 'react';
 import CardListFavourite from './CardListFavourite';
 
 const Favourites = () => {

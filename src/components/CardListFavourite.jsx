@@ -4,7 +4,7 @@ import CardProfile from './CardProfile';
 import FavouriteButton from './FavouriteButton';
 
 import '../screens/DarkSide.css';
-import CardListProfile from './CardListProfile';
+import CardListProfile from './CardListProfileDark';
 
 const CardListFavourite = ({ users, handleFavouriteClick, favouriteUsers }) => {
 

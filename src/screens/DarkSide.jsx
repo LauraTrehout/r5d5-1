@@ -3,10 +3,9 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 
 import Header from '../components/Header';
-import CardListProfile from './../components/CardListProfile';
 import NavBar from './../components/NavBar';
 import RedLightSaber from '../assets/red-saber.png'
-import FavouriteButton from '../components/FavouriteButton';
+import CardListProfileDark from './../components/CardListProfileDark';
 import './DarkSide.css';
 
 const DarkSide = () => {
@@ -37,7 +36,7 @@ const DarkSide = () => {
                 <h1>DARK SIDE</h1>
                 <p>If you want to go deep into Uranus</p>
                 <img src={RedLightSaber} alt='red light saber' className='red-light-saber' />
-                <CardListProfile users={users} handleFavouriteClick={addFavouriteUser} favouriteUsers={favouriteUsers} />
+                <CardListProfileDark users={users} handleFavouriteClick={addFavouriteUser} favouriteUsers={favouriteUsers} />
             </div>
         </>
     )
