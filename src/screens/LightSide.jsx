@@ -31,7 +31,7 @@ const LightSide = () => {
                 <img src={GreenLightSaber} alt='green light saber' className='green-light-saber' />
                 <div className='light-cards'>
                     {users
-                        .filter(user => user.affiliations.includes('New Republic') && user.name!='Mon Mothma' || user.affiliations.includes('Resistance') && user.name!='Mon Mothma')
+                        .filter(user => user.affiliations.includes('New Republic') && user.name!='Mon Mothma' || user.affiliations.includes('Resistance') && user.name!='Mon Mothma' || user.affiliations.includes('Galactic Republic') && user.name!='Mon Mothma')
                         .map(user => (
                             <CardProfile key={user.id} {...user} />
                         ))}

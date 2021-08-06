@@ -1,0 +1,7 @@
+.wall-shame-cards {
+    background-color: #2a1d31;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 50px;
+}

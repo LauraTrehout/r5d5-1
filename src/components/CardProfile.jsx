@@ -8,7 +8,7 @@ const CardProfile = ({ id, name, image }) => {
     <div className="card-profile">
       <h3>{name}</h3>
       <Link to={`/profile/${id}`}>
-        <img src={image} className='card-img-dark' />
+        <img src={image} className='card-profile-img' />
       </Link>
     </div>
   )
