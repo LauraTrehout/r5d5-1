@@ -32,7 +32,7 @@ function App() {
         <Route path='/profile/:id'>
           <CardProfileDetails />
         </Route>
-        <Route path='/MyProfile'>
+        <Route path='/myprofile'>
           <MyProfile />
         </Route>
         <Route path='/WallOfShame'>
