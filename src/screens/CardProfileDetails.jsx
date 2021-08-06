@@ -62,7 +62,8 @@ const CardProfileDetails = () => {
                          quo possimus numquam quis, aspernatur quia, unde reprehenderit dignissimos quisquam. 
                          At molestias voluptatum accusamus voluptates aliquid consequuntur expedita eligendi.
                         </p>
-                        </div>              
+                        </div>
+                    </div>              
                 </div>
             </div>
         </>
