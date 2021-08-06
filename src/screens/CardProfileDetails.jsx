@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 import Header from "../components/Header";
-import HeartButton from "../components/HeartButton";
 import NavBar from "../components/NavBar";
 
 import "./CardProfileDetails.css";
+import HeartButton from "../components/HeartButton";
 
 const CardProfileDetails = () => {
   const [details, setdetails] = useState([]);
@@ -50,6 +50,7 @@ const CardProfileDetails = () => {
           </div>
           <div className='details-yellowbox'>
             <div className='details-yellowbox-inside'>
+              <HeartButton />
               <h4>{details.name}</h4>
               <br />
               <p>Masters : {details.masters}</p>
@@ -65,30 +66,6 @@ const CardProfileDetails = () => {
               </p>
             </div>
           </div>
-        </div>
-        <div className='details-character-1'>
-          <p>homeworld : {details.homeworld}</p>
-          <p>gender : {details.gender}</p>
-          <p>species : {details.species}</p>
-        </div>
-      </div>
-      <div className='details-yellowbox'>
-        <div class='relative'>
-          <div className='details-yellowbox-inside'>
-            <HeartButton />
-          </div>
-          <h4>{details.name}</h4>
-          <br />
-          <p>Masters : {details.masters}</p>
-          <br />
-          <p>Apprentices : {details.apprentices}</p>
-          <br />
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
-            autem, alias quo possimus numquam quis, aspernatur quia, unde
-            reprehenderit dignissimos quisquam. At molestias voluptatum
-            accusamus voluptates aliquid consequuntur expedita eligendi.
-          </p>
         </div>
       </div>
     </>
