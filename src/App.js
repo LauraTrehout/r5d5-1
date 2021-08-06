@@ -8,10 +8,11 @@ import CardProfileDetails from "./screens/CardProfileDetails";
 import MyProfile from "./screens/MyProfile";
 import WallOfShame from "./screens/WallOfShame";
 import Search from "./screens/Search";
+import Connexion from "./components/Connexion";
+import Favourites from './components/Favourites';
 
 import "./App.css";
 import "tailwindcss/tailwind.css";
-import Connexion from "./components/Connexion";
 
 function App() {
   return (
@@ -43,6 +44,9 @@ function App() {
         </Route>
         <Route path='/Connexion'>
           <Connexion />
+        </Route>
+        <Route path='/favourites'>
+          <Favourites />
         </Route>
       </Switch>
     </div>

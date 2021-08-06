@@ -22,6 +22,13 @@ const NavBar = () => {
                 <img src={StarLove} />
             </div>
             <div class='m-5 text-white' style={{ fontSize: '30px' }}>
+                <NavLink to='/favourites' activeStyle={{
+                    color:'white',
+                    borderBottom:'solid white 2px'
+                }}>
+                    <button class=''>My Favourite</button></NavLink>
+            </div>
+            <div class='m-5 text-white' style={{ fontSize: '30px' }}>
                 <NavLink to='/WallOfShame' activeStyle={{
                     color:'white',
                     borderBottom:'solid white 2px'
