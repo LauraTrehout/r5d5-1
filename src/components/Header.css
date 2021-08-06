@@ -1,0 +1,34 @@
+.global-header {
+    display: flex;
+    flex-direction: row;
+    height: 30vh;
+}
+
+.love-baby {
+    width: 30%;
+}
+
+.love-baby-image {
+    min-height: 100%;
+    width: 30%;
+}
+
+.galaxy-image {
+    width: 70%;
+    height: 100%;
+}
+
+.falcon {
+    width: 70px;
+    position: absolute;
+    top: 15%;
+    left: 75%;
+}
+
+.chatbot {
+    position: absolute;
+    padding: 0;
+    margin:0;
+    bottom: 0;
+    right: 0;
+  }

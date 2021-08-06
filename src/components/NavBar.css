@@ -1,0 +1,25 @@
+.parent-navbar {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #91709b, white 100%)
+    /* background-color: ; */
+}
+
+.child-navbar {
+    font-size: 2rem;
+    color: white;
+}
+
+.wall {
+    justify-self: flex-end;
+    color: black;
+}
+
+.starlove-navbar {
+    height: 100%;
+} 
+
+.button-navbar {
+    padding: 20px;
+}
+
