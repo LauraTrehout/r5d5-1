@@ -3,7 +3,6 @@
     height: 500px;
     padding: 20px;
     padding-bottom: 85px;
-    
 }
 
 .card-profile-img {
@@ -13,7 +12,7 @@
     transition: transform 0.5s ease-in-out;
 }
 
-.card-img-dark:hover {
+.card-profile-img:hover {
     cursor: pointer;
     transform: scale(1.02);
 }
@@ -24,4 +23,15 @@
     text-align: center;
     padding: 15px;
     font-size: 20px;
+}
+
+.favourite-btn {
+    color: black;
+    font-size: 14px bold;
+    border: solid #e7bb41 0.5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+    margin-left: 25px;
+    background-color: #e7e5df;
 }
