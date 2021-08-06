@@ -1,0 +1,72 @@
+.grand-side {
+    display: flex;
+}
+
+.parent-side {
+    height: 100vh;
+    width: 50%;
+}
+
+.parent-side.light {
+    background-color: #e7bb41;
+}
+
+.parent-side.dark {
+    background-color: #2a1d31;
+}
+
+.child-side {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pick-yo {
+    align-self: flex-end;
+    margin: 15% 0 10% 0;
+    color: #2a1d31;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.ur-side {
+    align-self: flex-start;
+    margin: 15% 0 10% 0;
+    color: #e7bb41;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.chewbacca {
+    height: 250px;
+    width: 150px;
+}
+
+.missa {
+    height: 250px;
+    width: 150px;
+}
+
+.relationship {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 2%;
+    color: #393e41;
+}
+
+.stand {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 2%;
+    color: white;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(2500deg);
+    }
+  }
