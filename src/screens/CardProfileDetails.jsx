@@ -33,10 +33,7 @@ const CardProfileDetails = () => {
       </Link>
       <div className='details-profile'>
         <div className='details-image'>
-          <div class='relative'>
-            <HeartButton />
-            <img className='d-image' src={details.image} alt={details.name} />
-          </div>
+          <img className='d-image' src={details.image} alt={details.name} />
         </div>
         <div className='details-character'>
           <div className='semple'>
@@ -52,7 +49,10 @@ const CardProfileDetails = () => {
             </div>
           </div>
           <div className='details-yellowbox'>
-            <div className='details-yellowbox-inside'>
+            <div class='relative'>
+              <div className='details-yellowbox-inside'>
+                <HeartButton />
+              </div>
               <h4>{details.name}</h4>
               <br />
               <p>Masters : {details.masters}</p>

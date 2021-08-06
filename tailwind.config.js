@@ -2,10 +2,6 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    fill: (theme) => ({
-      true: theme("#DAA2F4"),
-      false: theme("#e7e5df"),
-    }),
     colors: {
       transparent: "transparent",
       current: "currentColor",
@@ -57,7 +53,6 @@ module.exports = {
     },
 
     extend: {
-      fill: ["hover", "focus"],
       animation: {
         "color-change": "color-change-x2 2.5s linear infinite alternate both",
         scale: "scale 5s linear infinite",
