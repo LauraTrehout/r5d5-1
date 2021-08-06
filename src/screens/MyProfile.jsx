@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import NavBar from '../components/NavBar'
 
 import iLoveYou from '../assets/loveLukeLeia.png';
+import './MyProfile.css';
 
 const MyProfile = () => {
 
@@ -31,16 +32,15 @@ const MyProfile = () => {
         </form> */}
           <div className="myInfoContainer">
             <div className="myInfo">
-              <p>Name: Leia Organa</p>
-              <p>Email: leiaStarRebelle@force.holo</p>
-              <p>Gender: Woman</p>
-              <p>Species: Human</p>
-              <p>Eye Color: Brown</p>
-              <p>Heigth: 1m50</p>
+              <p><span>Name : </span> Leia Organa</p>
+              <p><span>Email : </span> leiaStarRebelle@force.holo</p>
+              <p><span>Gender : </span> Woman</p>
+              <p><span>Species : </span> Human</p>
+              <p><span>Eye Color : </span> Brown</p>
+              <p><span>Heigth : </span> 1m50</p>
             </div>
-            <button type="submit"></button> {/* button modifier */}
+            <button>Modifier</button> {/* button submit */}
           </div>
-
       </div>
     </>
   );
