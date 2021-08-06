@@ -4,9 +4,16 @@ import Header from '../components/Header';
 import NavBar from '../components/NavBar';
 
 import iLoveYou from '../assets/loveLukeLeia.png';
+import bb8 from '../assets/bb8.png';
+
 import './MyProfile.css';
 
 const MyProfile = () => {
+
+  const runbb8 = (event) => {
+    // event.preventDefault();
+    event.target.style.animation = "runbb8 4s ease-in";
+  }
 
   const [modified, setModified] = useState(true);
   const [message, setMessage] = useState("");
@@ -38,11 +45,7 @@ const MyProfile = () => {
 
     localStorage.setItem('myProfile', JSON.stringify(myProfile));
 
-    // setMessage("Information modified !");
-
     setModified(false)
-    // setTimeout(() => {
-    // },1000)
   };
 
   const profil = JSON.parse(localStorage.getItem('myProfile') || '[]')
@@ -121,10 +124,11 @@ const MyProfile = () => {
               <p><span>Species : </span> {species}</p>
               <p><span>Eye Color : </span> {eyeColor}</p>
               <p><span>Heigth : </span> {height}</p>
-              <button onClick={() => setModified(true)}>Modifier</button>
+              <button onClick={() => setModified(true)} >Modifier</button>
             </div>
           </div>
         }
+        <div className="bb8" ><img src={bb8} alt="Img of bb8" onClick={(event) => runbb8(event)}/></div>
       </div>
     </>
   );
