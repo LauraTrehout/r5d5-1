@@ -27,10 +27,12 @@ const NavBar = () => {
             <div>
                 <img className='starlove-navbar' src={StarLove} />
             </div>
+
             <div className='child-navbar wall'>
                 <NavLink to='/WallOfShame' >
                     <button className='button-navbar'>Wall of Shame</button>
                 </NavLink>
+
             </div>
 
         </div>
