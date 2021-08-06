@@ -17,7 +17,7 @@ const theme = {
 const steps = [
   {
     id: '1',
-    message: "Coucou :) Tu t'appels comment ?",
+    message: "Coucou :) Tu t'appelles comment ?",
     trigger: '2'
   },
   {
@@ -27,7 +27,7 @@ const steps = [
   },
   {
     id: '3',
-    message: "Enchanté, moi c'est abdou :) Cherche tu des droides chauds de ton parsec ?",
+    message: "Enchanté, moi c'est Abdou :) Cherche-tu des droides chauds dans ton parsec ?",
     trigger: '4',
   },
   {

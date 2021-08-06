@@ -2,8 +2,6 @@
 import Connexion from '../components/Connexion';
 import ReactCircleModal from 'react-circle-modal'
 
-import ChatBotComp from '../components/ChatBotComp';
-
 import "tailwindcss/tailwind.css";
 import './WelcomePage.css';
 
@@ -58,9 +56,6 @@ const WelcomePage = () => {
         </div>
       )}
         </ReactCircleModal>
-      </div>
-      <div className='chatBot'>
-        <ChatBotComp  />
       </div>
     </div>
   );
