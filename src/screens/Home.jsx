@@ -5,8 +5,8 @@ import Header from "../components/Header";
 
 const Home = () => {
   return (
-    <div class='max-h-full'>
-      <Header />
+    <div>
+      <Header/>
       <NavBar />
       <PickYourSide />
     </div>

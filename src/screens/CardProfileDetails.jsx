@@ -45,6 +45,7 @@ const CardProfileDetails = () => {
               <p>age : {details.born}</p>
               <p>height : {details.height}</p>
             </div>
+<<<<<<< HEAD
             <div className='details-character-1'>
               <p>homeworld : {details.homeworld}</p>
               <p>gender : {details.gender}</p>
@@ -72,6 +73,12 @@ const CardProfileDetails = () => {
       </div>
     </>
   );
+=======
+            </div>
+        </>
+
+    )
+>>>>>>> 1dfeb449d28d1cde2cbc129375971872ccb835bf
 };
 
 export default CardProfileDetails;
