@@ -1,7 +1,7 @@
 .global-header {
     display: flex;
     flex-direction: row;
-    height: 200px;
+    height: 30vh;
 }
 
 .love-baby {
@@ -9,11 +9,13 @@
 }
 
 .love-baby-image {
-    height: 100%;
+    min-height: 100%;
+    width: 30%;
 }
 
-.galaxy {
-
+.galaxy-image {
+    width: 70%;
+    height: 100%;
 }
 
 .falcon {
