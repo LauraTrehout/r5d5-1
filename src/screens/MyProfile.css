@@ -30,10 +30,10 @@
 .myInfo {
   border-left: 10px solid #e7bb41;
   padding-left: 40px;
-  margin: 20px 0;
+  margin: 50px 0 20px 0;
 }
 
-.myInfo p {
+.myInfo p{
   margin-bottom: 20px
 }
 
@@ -48,4 +48,14 @@
   background-color: #e7bb41;
   border-radius: 5px;
   font-weight: 600;;
+}
+
+.myInfo input, .myInfo select {
+  background-color: rgba(255,255,255, 0);
+  border-bottom: 2px solid #e7bb41;
+}
+
+.myInfo option {
+  background-color: rgba(255,255,255, 0);
+  color: #000;
 }
