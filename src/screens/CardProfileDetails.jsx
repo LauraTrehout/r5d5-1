@@ -43,26 +43,26 @@ const CardProfileDetails = () => {
                             <p>age : {details.born}</p>
                             <p>height : {details.height}</p>
                         </div>
-                        <div className='details-character-2'>
+                        <div className='details-character-1'>
                             <p>homeworld : {details.homeworld}</p>
                             <p>gender : {details.gender}</p>
                             <p>species : {details.species}</p>
                         </div>
                     </div>
                     <div className='details-yellowbox'>
-                        <h4>{details.name}</h4>
-                        <br />
-                        <p>{details.masters}</p>
-                        <br />
-                        <p>{details.apprentices}</p>
-                        <br />
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti autem, alias
-                            quo possimus numquam quis, aspernatur quia, unde reprehenderit dignissimos quisquam.
-                            At molestias voluptatum accusamus voluptates aliquid consequuntur expedita eligendi.
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti autem, alias
-                            quo possimus numquam quis, aspernatur quia, unde reprehenderit dignissimos quisquam.</p>
-                    </div>
 
+                        <div className='details-yellowbox-inside'>
+                            <h4>{details.name}</h4>
+                                <br/>
+                            <p>Masters : {details.masters}</p>
+                                <br/>
+                        <p>Apprentices : {details.apprentices}</p>
+                            <br/>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti autem, alias
+                         quo possimus numquam quis, aspernatur quia, unde reprehenderit dignissimos quisquam. 
+                         At molestias voluptatum accusamus voluptates aliquid consequuntur expedita eligendi.
+                        </p>
+                        </div>              
                 </div>
             </div>
         </>
