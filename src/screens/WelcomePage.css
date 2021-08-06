@@ -10,3 +10,9 @@
   background-color: rgb(218, 162, 244);
   border-radius: 5px;
 }
+
+.chatBot {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+}
