@@ -6,6 +6,7 @@ import "tailwindcss/tailwind.css";
 import './WelcomePage.css';
 
 import leiaSlave from '../assets/leia-slave-no-bg.png';
+import Inscription from '../components/Inscription';
 
 const WelcomePage = () => {
 
@@ -35,7 +36,26 @@ const WelcomePage = () => {
         </div>
       )}
         </ReactCircleModal>
-        <button class="w-40 px-4 py-2 border-4 border-black font-bold text-lg bg-pinka rounded-md">Inscription</button>
+        <ReactCircleModal
+      backgroundColor="rgba(0,0,0,0.5)"
+      toogleComponent={onClick => (
+        <button class="w-40 px-4 py-2 border-4 border-black font-bold text-lg bg-pinka rounded-md" onClick={onClick}>
+          Inscription
+        </button>
+      )}
+      // Optional fields and their default values
+      offsetX={-100}
+      offsetY={100}
+    >
+      {(onClick) => (
+        <div className="modal" style={{ padding: '1em' }}>
+          <Inscription />
+          <button className='btnClose'  onClick={onClick}>
+            Close
+          </button>
+        </div>
+      )}
+        </ReactCircleModal>
       </div>
     </div>
   );
