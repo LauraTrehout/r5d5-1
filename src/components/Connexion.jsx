@@ -3,7 +3,6 @@ import { useHistory } from "react-router-dom";
 import love from "../assets/stormtrooper-love.jpg";
 
 const Connexion = () => {
-  // const [toHome, setToHome] = useState(false);
   const history = useHistory();
 
   const [message, setMessage] = useState("");

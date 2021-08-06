@@ -1,0 +1,80 @@
+.myProfile {
+  width: 100%;
+  height: 63vh;
+  display: flex;
+  background-color: #2a1d31;
+  color: #fff;
+  overflow: hidden;
+}
+
+.myInfoBanner {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.myInfoBanner h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.myInfoContainer {
+  width:40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.myInfo {
+  border-left: 10px solid #e7bb41;
+  padding-left: 40px;
+  margin: 50px 0 20px 0;
+}
+
+.myInfo p ,.myInfo input , .myInfo select{
+  margin-bottom: 20px;
+}
+
+.myInfo span {
+  font-weight: bold;
+  font-size: 24px
+}
+.myInfoContainer button {
+  align-self: start;
+  margin-left: 30px;
+  margin-top: 15px;
+  padding: 5px 20px;
+  background-color: #e7bb41;
+  border-radius: 5px;
+  font-weight: 600;;
+  width: 120px;
+}
+
+.myInfo input, .myInfo select {
+  background-color: rgba(255,255,255, 0);
+  border-bottom: 2px solid #e7bb41;
+  color: #fff;
+}
+
+.myInfo option {
+  background-color: rgba(255,255,255, 0);
+  color: #000;
+}
+
+.bb8 {
+  position: absolute;
+  width: 200px;
+  bottom: -20px;
+}
+
+@keyframes runbb8 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(2000%);
+  }
+}

@@ -28,6 +28,11 @@ const NavBar = () => {
                 <img className='starlove-navbar' src={StarLove} />
             </div>
             <div className='child-navbar wall'>
+                <NavLink to='/favourites' >
+                    <button className='button-navbar'>Favourites</button>
+                </NavLink>
+            </div>
+            <div className='child-navbar wall'>
                 <NavLink to='/WallOfShame' >
                     <button className='button-navbar'>Wall of Shame</button>
                 </NavLink>
