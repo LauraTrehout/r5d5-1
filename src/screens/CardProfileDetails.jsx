@@ -66,7 +66,6 @@ const CardProfileDetails = () => {
                     </div>
                 </div>
             </div>
-            </div>
         </>
 
     )
