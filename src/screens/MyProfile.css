@@ -33,8 +33,8 @@
   margin: 50px 0 20px 0;
 }
 
-.myInfo p{
-  margin-bottom: 20px
+.myInfo p ,.myInfo input , .myInfo select{
+  margin-bottom: 20px;
 }
 
 .myInfo span {
@@ -43,16 +43,19 @@
 }
 .myInfoContainer button {
   align-self: start;
-  margin-left: 50px;
+  margin-left: 30px;
+  margin-top: 15px;
   padding: 5px 20px;
   background-color: #e7bb41;
   border-radius: 5px;
   font-weight: 600;;
+  width: 120px;
 }
 
 .myInfo input, .myInfo select {
   background-color: rgba(255,255,255, 0);
   border-bottom: 2px solid #e7bb41;
+  color: #fff;
 }
 
 .myInfo option {
