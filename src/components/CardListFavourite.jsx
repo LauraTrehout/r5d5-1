@@ -1,18 +1,23 @@
-
-
 import CardProfile from './CardProfile';
-import FavouriteButton from './FavouriteButton';
+import RemoveFavourite from './RemoveButton';
 
 import '../screens/DarkSide.css';
-import CardListProfile from './CardListProfileDark';
 
-const CardListFavourite = ({ users, handleFavouriteClick, favouriteUsers }) => {
+
+const CardListFavourite = ({ user, favouriteUsers, handleFavouriteClick }) => {
 
     return (
         <div className='dark-cards'>
-        {favouriteUsers.map(user => <CardProfile {...user} />)}
+            {favouriteUsers.map(user => (
+                <div>
+                    <CardProfile {...user} />
+                    <div onClick={() => { handleFavouriteClick(user) }}>
+                        <RemoveFavourite />
+                    </div>
+                </div>
+            ))}
         </div>
     )
-}
+            }
 
-export default CardListFavourite;
+    export default CardListFavourite;

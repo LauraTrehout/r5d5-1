@@ -3,7 +3,7 @@ import FavouriteButton from './FavouriteButton';
 
 import '../screens/DarkSide.css';
 
-const CardListProfileDark = ({ users, handleFavouriteClick, favouriteUsers }) => {
+const CardListProfileDark = ({ users, handleFavouriteClick }) => {
 
     return (
         <div className='dark-cards'>

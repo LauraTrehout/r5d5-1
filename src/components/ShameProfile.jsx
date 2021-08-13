@@ -1,7 +1,7 @@
 import './ShameProfile.css';
 import Wanted from '../assets/wanted-yellow.jpg';
 
-const ShameProfile = ({ id, name, image }) => {
+const ShameProfile = ({ image }) => {
     return (
         <div className="shame-profile">
             <img src={Wanted} className='wanted' />
