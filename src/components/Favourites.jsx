@@ -25,7 +25,7 @@ const removeFavourite = (user) => {
         <>
             <Header />
             <NavBar />
-            <CardListFavourite handleFavouriteClick={removeFavourite} favouriteUsers={favouriteUsers} />}
+            <CardListFavourite handleFavouriteClick={removeFavourite} favouriteUsers={favouriteUsers} />
         </>
     );
 }
