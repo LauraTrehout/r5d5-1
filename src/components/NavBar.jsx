@@ -19,11 +19,11 @@ const NavBar = () => {
                     <button className='button-navbar'>Profile</button>
                 </NavLink>
             </div>
-            <div className='child-navbar'>
+            {/* <div className='child-navbar'>
                 <NavLink to='/Search'>
                     <button className='button-navbar'>Search</button
                 ></NavLink>
-            </div>
+            </div> */}
             <div>
                 <img className='starlove-navbar' src={StarLove} />
             </div>

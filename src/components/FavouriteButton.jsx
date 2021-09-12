@@ -6,7 +6,7 @@ const FavouriteButton = () => {
     return (
         <div>
             <button className='favourite-btn'
-                onClick={() => setIsFavourite(!isFavourite)}>{isFavourite ? "Changed my mind" : 'Like'}</button>
+                onClick={() => setIsFavourite(!isFavourite)}>{isFavourite ? "Added to favourite" : 'Like'}</button>
         </div>
     );
 }

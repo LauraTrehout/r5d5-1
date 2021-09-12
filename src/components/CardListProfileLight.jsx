@@ -3,7 +3,7 @@ import FavouriteButton from './FavouriteButton';
 
 import '../screens/LightSide.css';
 
-const CardListProfileLight = ({ users, handleFavouriteClick, favouriteUsers }) => {
+const CardListProfileLight = ({ users, handleFavouriteClick }) => {
 
     return (
         <div className='light-cards'>
@@ -21,6 +21,6 @@ const CardListProfileLight = ({ users, handleFavouriteClick, favouriteUsers }) =
                 ))}
         </div>
     )
-}
+                }
 
 export default CardListProfileLight;

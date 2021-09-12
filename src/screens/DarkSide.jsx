@@ -34,7 +34,6 @@ const DarkSide = () => {
             <NavBar />
             <div className="dark-side-container">
                 <h1>DARK SIDE</h1>
-                <p>If you want to go deep into Uranus</p>
                 <img src={RedLightSaber} alt='red light saber' className='red-light-saber' />
                 <CardListProfileDark users={users} handleFavouriteClick={addFavouriteUser} favouriteUsers={favouriteUsers} />
             </div>

@@ -35,7 +35,6 @@ console.log(users);
             <NavBar />
             <div className="light-side-container">
                 <h1>LIGHT SIDE</h1>
-                <p>If you want to go deep into a relationship</p>
                 <img src={GreenLightSaber} alt='green light saber' className='green-light-saber' />
                 <CardListProfileLight users={users} handleFavouriteClick={addFavouriteUser} favouriteUsers={favouriteUsers} />
             </div>
