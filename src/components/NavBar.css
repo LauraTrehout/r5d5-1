@@ -1,12 +1,13 @@
 .parent-navbar {
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(to right, #91709b, white 100%)
-    /* background-color: ; */
+    align-items: center;
+    background: linear-gradient(to right, #91709b, white 100%);
+    height: 50px;
 }
 
 .child-navbar {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
 }
 
@@ -17,6 +18,8 @@
 
 .starlove-navbar {
     height: 100%;
+    position: relative;
+    box-shadow: 5px 5px 7px #d4eb0d;
 } 
 
 .button-navbar {
