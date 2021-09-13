@@ -1,12 +1,14 @@
 
+import { Link } from 'react-router-dom';
+
 import Connexion from '../components/Connexion';
 import ReactCircleModal from 'react-circle-modal'
+import Inscription from '../components/Inscription';
 
 import "tailwindcss/tailwind.css";
 import './WelcomePage.css';
 
 import leiaSlave from '../assets/leia-slave-no-bg.png';
-import Inscription from '../components/Inscription';
 
 const WelcomePage = () => {
 
@@ -14,7 +16,9 @@ const WelcomePage = () => {
     <div class='w-full h-screen text-center bg-accueil bg-center bg-origin-border bg-no-repeat bg-cover flex flex-col justify-between'>
       <h1 class=" mt-14 text-8xl font-bold text-pinka animate-color-change" style={{ textShadow: '-2px 2px 1px #000, 2px 2px 1px #000, 2px -2px 1px #000,-2px -2px 1px #000, 0 20px 15px rgb(236, 72, 153)'}}
       >STARLOVE</h1>
+      <Link to='/home'>
       <img src={leiaSlave} alt="Img of Leia" class="animate-scale" style={{ margin: '0 auto 25px auto', maxWidth: '600px'}} />
+      </Link>
       <div class="mb-20 space-x-20">
         <ReactCircleModal
       backgroundColor="rgba(0,0,0,0.5)"
