@@ -28,7 +28,7 @@ const Side = () => {
           <h2 className="pick-yo">PICK YO</h2>
           <Link to="/lightside">
             {/* <button onClick={(e) => handleClick(e, 'light')}> */}
-            <img className="chewbacca" src={missa} alt="the light side" />
+            <img className="missa" src={missa} alt="the light side" />
             {/* </button> */}
           </Link>
           <p className="relationship">Relationship</p>
@@ -39,7 +39,7 @@ const Side = () => {
           <h2 className="ur-side">UR SIDE</h2>
           <Link to="/darkside">
             {/* <button onClick={(e) => handleClick(e, 'dark')}> */}
-            <img className="missa" src={hansolo} alt="the dark side" />
+            <img className="hansolo" src={hansolo} alt="the dark side" />
             {/* </button> */}
           </Link>
           <p className="stand">One night stand</p>

@@ -10,3 +10,24 @@
   background-color: rgb(218, 162, 244);
   border-radius: 5px;
 }
+
+.enter-btn {
+  display: none;
+}
+
+@media screen and (max-width:720px) {
+  .animate-scale {
+    display: none;
+  }
+
+  .enter-btn {
+    font-size: 30px;
+    width: 200px;
+    border: solid 3px black;
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(218, 162, 244);
+    border-radius: 5px;
+    margin: 0 auto;
+  }
+}
