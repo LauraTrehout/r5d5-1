@@ -8,7 +8,6 @@ import "./NavBar.css";
 
 const NavBar = () => {
   return (
-    <>
       <div className="parent-navbar">
         <div className="child-navbar">
           <NavLink to="/home">
@@ -39,15 +38,6 @@ const NavBar = () => {
           </NavLink>
         </div>
       </div>
-      <div className="nav-mobile">
-        <ul>
-          <li>Home</li>
-          <li>Profile</li>
-          <li>Fav</li>
-          <li>Shame</li>
-        </ul>
-      </div>
-    </>
   );
 };
 
