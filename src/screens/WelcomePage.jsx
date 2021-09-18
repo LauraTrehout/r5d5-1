@@ -13,7 +13,7 @@ const WelcomePage = () => {
   return (
     <div class="w-full h-screen text-center bg-accueil bg-center bg-origin-border bg-no-repeat bg-cover flex flex-col justify-between">
       <h1
-        class=" mt-14 text-8xl text-pinka animate-color-change"
+        class=" mt-14 text-4xl text-pinka animate-color-change"
         style={{
           textShadow:
             "-2px 2px 1px #000, 2px 2px 1px #000, 2px -2px 1px #000,-2px -2px 1px #000, 0 20px 15px rgb(236, 72, 153)",
