@@ -32,12 +32,13 @@ const WelcomePage = () => {
       <Link to="/home">
         <button className="enter-btn">Par ici</button>
       </Link>
-      <div class="mb-20 space-x-20">
+      <div className='button-container'>
+      {/* class="mb-20 space-x-20" */}
         <ReactCircleModal
           backgroundColor="rgba(0,0,0,0.5)"
           toogleComponent={(onClick) => (
-            <button
-              class="w-40 px-4 py-2 border-4 border-black font-bold text-lg bg-pinka rounded-md"
+            <button className='button'
+              // class="w-40 px-4 py-2 border-4 border-black font-bold text-lg bg-pinka rounded-md"
               onClick={onClick}
             >
               Se Connecter
@@ -59,8 +60,8 @@ const WelcomePage = () => {
         <ReactCircleModal
           backgroundColor="rgba(0,0,0,0.5)"
           toogleComponent={(onClick) => (
-            <button
-              class="w-40 px-4 py-2 border-4 border-black font-bold text-lg bg-pinka rounded-md"
+            <button className='button'
+              // class="w-40 px-4 py-2 border-4 border-black font-bold text-lg bg-pinka rounded-md"
               onClick={onClick}
             >
               Inscription

@@ -79,3 +79,13 @@
     transform: translateX(2000%);
   }
 }
+
+@media screen and (max-width:900px) {
+  .bb8 {
+    display: none;
+  }
+
+  .myProfile {
+    flex-direction: column;
+  }
+}

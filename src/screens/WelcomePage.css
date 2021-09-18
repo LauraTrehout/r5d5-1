@@ -15,6 +15,24 @@
   display: none;
 }
 
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.button{
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(218, 162, 244);
+  border-radius: 5px;
+  font-size: 20px;
+  border: solid 1px black;
+}
+
+
+
 @media screen and (max-width:720px) {
   .animate-scale {
     display: none;
@@ -23,7 +41,7 @@
   .enter-btn {
     font-size: 30px;
     width: 200px;
-    border: solid 3px black;
+    border: solid 1px black;
     display: inline-block;
     text-align: center;
     background-color: rgb(218, 162, 244);
@@ -31,3 +49,11 @@
     margin: 0 auto;
   }
 }
+
+/* @media screen and (max-width:720px) {
+  .button{
+    font-size: 0px;
+    margin: 0;
+    padding: 0;
+  }
+} */
