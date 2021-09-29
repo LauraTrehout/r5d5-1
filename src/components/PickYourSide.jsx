@@ -26,23 +26,27 @@ const Side = () => {
       <div className="parent-side light">
         <div className="child-side light">
           <h2 className="pick-yo">PICK YO</h2>
+          <div className='avatar-and-catchphrase'>
           <Link to="/lightside">
             {/* <button onClick={(e) => handleClick(e, 'light')}> */}
             <img className="missa" src={missa} alt="the light side" />
             {/* </button> */}
           </Link>
           <p className="relationship">Relationship</p>
+          </div>
         </div>
       </div>
       <div className="parent-side dark">
         <div className="child-side dark">
           <h2 className="ur-side">UR SIDE</h2>
+          <div className='avatar-and-catchphrase'></div>
           <Link to="/darkside">
             {/* <button onClick={(e) => handleClick(e, 'dark')}> */}
             <img className="hansolo" src={hansolo} alt="the dark side" />
             {/* </button> */}
           </Link>
           <p className="stand">One night stand</p>
+          <div className='avatar-and-catchphrase'></div>
         </div>
       </div>
     </div>

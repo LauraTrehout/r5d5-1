@@ -1,5 +1,6 @@
 .grand-side {
     display: flex;
+    /* height: 100vh; */
 }
 
 .parent-side {
@@ -9,17 +10,17 @@
 
 .parent-side.light {
     background-color: #e7bb41;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .parent-side.dark {
     background-color: #2a1d31;
-    height: 100vh;
+    /* height: 100vh; */
     /* display: flex; */
 }
 
 .child-side {
-    height: 80vh;
+    /* height: 80vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,6 +40,14 @@
     color: #e7bb41;
     font-size: 3em;
     font-weight: bold;
+}
+
+.avatar-and-catchphrase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%
 }
 
 .relationship {
